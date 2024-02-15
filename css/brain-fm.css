@@ -32,15 +32,15 @@ body{
 .headline-2{
     font-size: 50px;
     margin: 0px;
-    font-weight: bold;
+    font-weight: bold;    
 }
 
 .footline-1{    
     display: flex;    
-    font-size: 7px;
-    text-align: left;    
-    justify-content: space-around;
-    flex-flow: row wrap;
+    font-size: 10px;
+    text-align: left;   
+    color: lightgray; /*match the color of the image beneath it*/
+
 }
 
 input[type = 'button']{
@@ -69,7 +69,7 @@ a:hover{
     flex: 1;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-content: flex-start;
     
 }
 
@@ -94,29 +94,24 @@ a:hover{
     text-align: center;
     background-color: rgb(73, 18, 246);
     margin: 0px;
-    padding: 20%;
+    padding: 20%; /*yeah, I used padding here-- should I have used flex instead?*/
     color: white;
-    font-size: 20px;
+    font-size: 150%;
 }
 
 .footer {
     background-color: rgb(73, 18, 246);
     color: white;
+    display: flex;
+    flex: 1;
+    gap: 0% 5%; /*added to put space between the two footer columns*/
 
 }
 
 .footer-column {
     display: flex;
     flex:1;
-    flex-direction: column;
-    gap: 5%;
-    
-}
-
-.headline-3{
-    
-    flex: 1;
-    
+    flex-direction: column;        
 }
 
 /*h1 {
