@@ -1,6 +1,4 @@
-body{
-    display: flex
-    flex 1;
+body{    
     margin: 0px; /*remove margin default of 8px, to "fill" the screen*/
     border: 0px;
     font-family: Arial;
@@ -35,6 +33,22 @@ body{
     font-weight: bold;    
 }
 
+.content-column-left-column{
+    background-color: rgb(73, 18, 246); 
+    display: flex;
+    flex: auto;
+    flex-direction: column;
+    
+}
+
+.content-column-right-column{
+    background-color: rgb(73, 18, 246); 
+    display: flex;
+    flex: auto;
+    flex-direction: column;
+    
+}
+
 .footline-1{    
     display: flex;    
     font-size: 10px;
@@ -43,12 +57,13 @@ body{
 
 }
 
-input[type = 'button']{
+#button1{ /*removed input filter, went with id instead since buttons are  different)*/
     padding: 5px 20px; /*Make the button "pop" :) */
     font-weight: bold;
     border: 0px; /* remove the 2px of border */
-    border-radius: 15px; /* make the button more round */
+    border-radius: 15px; /* make the button more round */    
 }
+
 a:visited {
     color: white; /* change color from default purple to white on already visited links*/
 }
@@ -71,6 +86,16 @@ a:hover{
     flex-direction: column;
     align-content: flex-start;
     
+    
+}
+
+#button2{   /*Try 5 free sessions button*/
+        padding: 20px 10px; /*Make the button "pop" :) */
+        font-weight: bold;
+        border: 0px; /* remove the 2px of border */
+        border-radius: 50px; /* make the button more round */    
+        word-wrap: normal; /*tried to get "sessions" to appear on next line :( */
+        
 }
 
 .left-column {
@@ -90,13 +115,16 @@ a:hover{
 
 /*FOOTER SECTION*/
 
-.footer-top{
-    text-align: center;
+.footer-top{    
     background-color: rgb(73, 18, 246);
-    margin: 0px;
-    padding: 20%; /*yeah, I used padding here-- should I have used flex instead?*/
     color: white;
     font-size: 150%;
+    display: flex;    
+    margin: 0px; /*get rid of white lines around footer-top*/
+    flex-direction: row;
+    justify-content: space-around; /*move text to center*/    
+    padding: 20%; /*give space between footer and content*/
+    
 }
 
 .footer {
