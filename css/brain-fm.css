@@ -17,7 +17,7 @@ body{
 }
 /* HEADER SECTION*/
 .header{
-    background-color: rgb(63, 10, 209);
+    background-color: rgb(73, 18, 246); /*found this with MSpaint, use Eyedropper and select Edit Colors*/
     color: white; /*set color of all text within header class*/
     display: flex;
     flex-direction: row; /*technically redundant, this is the default*/
@@ -36,8 +36,7 @@ body{
 }
 
 .footline-1{    
-    display: flex;
-    background-color: rgb(63, 10, 209);
+    display: flex;    
     font-size: 7px;
     text-align: left;    
     justify-content: space-around;
@@ -75,12 +74,12 @@ a:hover{
 }
 
 .left-column {
-    background-color: rgb(63, 10, 209);
+    background-color: rgb(73, 18, 246);
     
 }
 
 .right-column {
-    background-color: rgb(63, 10, 209);
+    background-color: rgb(73, 18, 246);
 }
 
 .right-column-item {
@@ -93,7 +92,7 @@ a:hover{
 
 .footer-top{
     text-align: center;
-    background-color: rgb(63, 10, 209);
+    background-color: rgb(73, 18, 246);
     margin: 0px;
     padding: 20%;
     color: white;
@@ -101,7 +100,7 @@ a:hover{
 }
 
 .footer {
-    background-color: rgb(63, 10, 209);
+    background-color: rgb(73, 18, 246);
     color: white;  
 
 }
