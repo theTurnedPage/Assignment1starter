@@ -1,5 +1,8 @@
 body{
+    display: flex
+    flex 1;
     margin: 0px; /*remove margin default of 8px, to "fill" the screen*/
+    border: 0px;
     font-family: Arial;
 }
 
@@ -8,7 +11,9 @@ body{
 .footer {
     display: flex;
     flex: 1;
-    margin: 0px;
+    /*margin: 0px; /*remove margin default of 8px, to "fill" the screen*/
+    border: 0px;
+    font-family: Arial;
 }
 /* HEADER SECTION*/
 .header{
@@ -27,7 +32,16 @@ body{
 .headline-2{
     font-size: 50px;
     margin: 0px;
-    font-style: bold;
+    font-weight: bold;
+}
+
+.footline-1{    
+    display: flex;
+    background-color: rgb(63, 10, 209);
+    font-size: 7px;
+    text-align: left;    
+    justify-content: space-around;
+    flex-flow: row wrap;
 }
 
 input[type = 'button']{
@@ -77,20 +91,30 @@ a:hover{
 
 /*FOOTER SECTION*/
 
+.footer-top{
+    text-align: center;
+    background-color: rgb(63, 10, 209);
+    margin: 0px;
+    padding: 20%;
+    color: white;
+    font-size: 20px;
+}
+
 .footer {
     background-color: rgb(63, 10, 209);
-    color: white;
+    color: white;  
+
 }
 
 .footer-column {
     flex: 1;
     text-align: center;
+    
 }
 
-.footer-line {
-    text-align: left;
+.headline-3{
+    text-align: justify;
 }
-
 
 /*h1 {
     font-size: 10em;
