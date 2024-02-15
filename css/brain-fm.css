@@ -7,10 +7,10 @@ body{
 .header,
 .content,
 .footer {
-    display: flex;
-    flex: 1;
-    /*margin: 0px; /*remove margin default of 8px, to "fill" the screen*/
-    border: 0px;
+   /* display: flex;
+    flex: 1;    seems redundant */
+    background-color: rgb(73, 18, 246);
+    padding: 1%; /*move elements away from the margins, but preserve background color*/
     font-family: Arial;
 }
 /* HEADER SECTION*/
