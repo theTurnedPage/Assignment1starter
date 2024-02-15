@@ -101,18 +101,22 @@ a:hover{
 
 .footer {
     background-color: rgb(73, 18, 246);
-    color: white;  
+    color: white;
 
 }
 
 .footer-column {
-    flex: 1;
-    text-align: center;
+    display: flex;
+    flex:1;
+    flex-direction: column;
+    gap: 5%;
     
 }
 
 .headline-3{
-    text-align: justify;
+    
+    flex: 1;
+    
 }
 
 /*h1 {
