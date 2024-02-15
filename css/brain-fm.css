@@ -26,11 +26,13 @@ body{
 .headline-1{
     font-size: 40px;
     margin: 0px; /*remove extra spacing between next headline*/
+    flex-grow: 0.1;
 }
 .headline-2{
     font-size: 50px;
     margin: 0px;
-    font-weight: bold;    
+    font-weight: bold;   
+    flex-grow: 1; 
 }
 
 .content-column-left-column{
@@ -38,7 +40,7 @@ body{
     display: flex;
     flex: auto;
     flex-direction: column;
-    
+    gap: 10px; /*separate the flex items or containers a little*/
 }
 
 .content-column-right-column{
@@ -54,10 +56,11 @@ body{
     font-size: 10px;
     text-align: left;   
     color: lightgray; /*match the color of the image beneath it*/
+    
 
 }
 
-#button1{ /*removed input filter, went with id instead since buttons are  different)*/
+#submitButton1{ /*removed input filter, went with id instead since buttons are  different)*/
     padding: 5px 20px; /*Make the button "pop" :) */
     font-weight: bold;
     border: 0px; /* remove the 2px of border */
@@ -84,18 +87,31 @@ a:hover{
     flex: 1;
     display: flex;
     flex-direction: column;
-    align-content: flex-start;
-    
-    
+    align-content: flex-start;  
 }
 
-#button2{   /*Try 5 free sessions button*/
-        padding: 20px 10px; /*Make the button "pop" :) */
+#submitButton2{   /*Try 5 free sessions button*/
+        display: flex;
+        flex: 1;
+        flex-grow: 1;        
+        padding: 40px 30px; /*Make the button "pop" :) */
         font-weight: bold;
+        font-size: 100%;
         border: 0px; /* remove the 2px of border */
         border-radius: 50px; /* make the button more round */    
         word-wrap: normal; /*tried to get "sessions" to appear on next line :( */
         
+}
+
+.paragraph-1{
+    display: flex;
+    flex: 1,1,200%;
+    color: lightgray;
+    margin: 0px;    
+    font-size:larger;
+    flex-grow: 3; /*take up more space, push the button and image to the bottom of the column*/
+    
+    flex-wrap: wrap-reverse;
 }
 
 .left-column {
