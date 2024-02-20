@@ -149,6 +149,8 @@ a:hover{
     display: flex;
     flex: 1;
     gap: 0% 5%; /*added to put space between the two footer columns*/
+    padding-left: 15%; /*create more space on the left of the footer*/
+    padding-right: 15%; /*ditto */
 
 }
 
